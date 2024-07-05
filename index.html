@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen w-full">
+    <div class="controllerFlex w-full flex flex-col items-center justify-between  h-screen">
+
+    <header class="w-full flex flex-col items-center shadow-md">
+        <div class="flex justify-center ">
+            <img src="./img/logo_webgis.svg" class="w-20 my-2 mx-4">
+        </div>
+    </header>
+
+    <main class="w-full py-10 shadow-md">
+        <div>
+            <h1 class="text-2xl text-center">Graficos com dados da enchente na cidade de Barra do Ribeiro</h1>
+        </div>
+        <div class="graficos w-full p-2 flex flex-col md:flex-row md:flex-wrap justify-center items-center">
+
+            <div class="chart-container-bary md:w-1/3 mt-10">
+                <h2 class="pb-4 text-xl">Número de lotes atingidos:</h2>
+                <canvas id="myCharty" class="p-2"></canvas>
+            </div>
+        
+            <div class="chart-container-doughnut md:w-1/3 mt-10">
+                <h2 class="pb-4 text-xl">Comercios, Servicos e Instituicoes Atingidas:</h2>
+                <div class="chart-container-doughnut-aux m-auto flex justify-center">
+                    <canvas id="myChartPolar" class="p-2"></canvas>    
+                </div>
+            </div>
+        
+            <div class="chart-container-barx md:w-1/3 mt-10">
+                <h2 class="pb-4 text-xl">Área total dos lotes atingidos:</h2>
+                <canvas id="myChartx" class="p-2"></canvas>
+            </div>
+            </div>
+
+    </main>
+
+    
+
+    <footer class="w-full flex flex-col sm:flex-row justify-center flex-wrap relative">
+        <div class="basis-1/4 flex justify-center items-center">
+            <a href="https://www.gaussgeo.com.br/"> <img src="./img/logo_gauss.svg" class="w-36 h-20 " alt="logo-gauss"></a>
+        </div>
+    </footer>
+
+    </div>
+    <script src="barX.js"></script>
+    <script src="polar.js"></script>
+    <script src="barY.js"></script>
+</body>
+</html>

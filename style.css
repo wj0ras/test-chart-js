@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('./img/vetoratualizado.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: rgb(39, 38, 38);
+}
+
+main {
+    background-color: white;
+}
+
+.chart-container-doughnut {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.chart-container-barx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.chart-container-bary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.chart-container-doughnut-aux {
+    width: 50%;
+}
